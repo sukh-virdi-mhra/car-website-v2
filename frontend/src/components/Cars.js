@@ -21,9 +21,8 @@ function Cars(props) {
         <div className="grid">
           {localData.cars.map((car, i) => (
             <div key={i} className="card">
-              <h2>{car.manufacturer}</h2>
-              <p>Model: {car.model}</p>
-              <p>Horsepower: {car.horsepower}</p>
+              <h2>{car.name}</h2>
+              <p> {car.price}</p>
             </div>
           ))}
         </div>
