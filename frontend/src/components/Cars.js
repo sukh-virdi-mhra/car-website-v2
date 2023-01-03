@@ -18,14 +18,20 @@ function Cars(props) {
   });
 
   return (
-    <div>
-      <h1>Favourite Cars</h1>
+    <div className="grid-container">
+      <h1 className="center-title">Favourite Cars</h1>
       {typeof localData.cars === "undefined" ? (
         <p>Loading...</p>
       ) : (
         <div className="grid">
           {localData.cars.map((car, i) => (
             <div key={i} className="card">
+              <img
+                src={car.image}
+                alt={car.name}
+                className="card-image"
+                style={{ width: "100%", height: "200px" }}
+              />
               <h2>{car.name}</h2>
               {car.price ? <p>{formatter.format(car.price)}</p> : <p>POA</p>}
             </div>

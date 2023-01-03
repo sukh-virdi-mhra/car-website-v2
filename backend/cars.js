@@ -4,6 +4,8 @@ const cars = [
     mileage: 14450,
     year: 2006,
     price: "",
+    image:
+      "https://f7432d8eadcf865aa9d9-9c672a3a4ecaaacdf2fee3b3e6fd2716.ssl.cf3.rackcdn.com/C2299/U8363/IMG_33994-large.jpg",
     summary:
       "EU Supplied Carrera GT finished in A1 Solid Black over Black leather interior.",
     description: [
@@ -15,6 +17,8 @@ const cars = [
     mileage: 1125,
     year: 2010,
     price: 1399950,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/46/Lamborghini_Revent%C3%B3n_Roadster.JPG",
     summary: "Lamborghini Reventon Roadster. 1 of just 3 produced in RHD.",
     description: [
       "The Lamborghini Reventon was first unveiled at the 2007 Frankfurt Motor Show and was the most expensive Lamborghini road car ever produced. The Reventon share many of its mechanical components with the LP640 Murciélago but features a completely reworked exterior and interior, both of which were designed to imitate that of an F15 Fighter Jet. Just 20 Reventon Coupes were produced. The Reventon utilises the same 6.5 litre naturally aspirated V12 engine as found in the Murciélago, although the increased use of carbon fibre composites liberates an extra 10bhp over the Murciélago, bringing the total to a guaranteed 641bhp at 8000rpm, powering the Reventon to a top speed of 211mph. This power is deployed through a 6-speed e-gear semi-automatic gearbox with the same AWD system found in the Murciélago. All Reventons produced were finished in the same ‘Reventon’ Grey, a mid-opaque grey which mimics the paint used on the F15 Fighter Jets. The aerospace theme continues throughout the interior, with the Reventon utilising a cutting edge TFT liquid crystal dash display which can change from a digital display to a quasi-analogical display at the press of a button. In 2009 Lamborghini unveiled the Roadster variant of the Reventon, with an even smaller production run of just 15 units. The car we are pleased to offer is a 2010 model and is one of just three produced in RHD variant. It is a UK supplied car with just 2 owners from new and sits today in fantastic condition after covering just over 1,100 miles. The car also benefits from a fresh service with Lamborghini London, ensuring it is ready to be enjoyed by its next owner.",
@@ -25,6 +29,8 @@ const cars = [
     mileage: 26725,
     year: 1971,
     price: 439950,
+    image:
+      "https://www.supercars.net/blog/wp-content/uploads/2016/04/1970_Ferrari_365GTB4Daytona1-e1611434522403.jpg",
     summary:
       "U.S. Supplied Ferrari 365 GTB/4 Daytona finished in Rosso over Nero.",
     description: [
