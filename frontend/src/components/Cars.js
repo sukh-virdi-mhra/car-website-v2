@@ -12,6 +12,11 @@ function Cars(props) {
       });
   }, []);
 
+  const formatter = new Intl.NumberFormat("en-GB", {
+    style: "currency",
+    currency: "GBP",
+  });
+
   return (
     <div>
       <h1>Favourite Cars</h1>
@@ -22,7 +27,7 @@ function Cars(props) {
           {localData.cars.map((car, i) => (
             <div key={i} className="card">
               <h2>{car.name}</h2>
-              <p> {car.price}</p>
+              {car.price ? <p>{formatter.format(car.price)}</p> : <p>POA</p>}
             </div>
           ))}
         </div>

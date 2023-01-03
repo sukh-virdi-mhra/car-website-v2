@@ -3,7 +3,7 @@ const cars = [
     name: "Porsche Carrera GT",
     mileage: 14450,
     year: 2006,
-    price: "POA",
+    price: "",
     summary:
       "EU Supplied Carrera GT finished in A1 Solid Black over Black leather interior.",
     description: [
