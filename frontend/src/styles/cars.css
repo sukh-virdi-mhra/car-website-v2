@@ -8,7 +8,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-gap: 20px;
-  background-color: #ddd;
   justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
@@ -100,5 +99,79 @@ h2 {
 @media only screen and (max-width: 1000px) {
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-title {
+  font-size: 1.5em;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header-info {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+  .header-right {
+    align-items: center;
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.header-right {
+  margin-right: 20px;
+}
+
+.footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header-left {
+    margin-bottom: 10px;
+  }
+
+  .header-right {
+    padding-top: 10px;
+  }
+
+  .header-right p:first-of-type {
+    margin-bottom: 0;
   }
 }
