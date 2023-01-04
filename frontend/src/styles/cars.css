@@ -1,9 +1,11 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-gap: 20px;
   background-color: #ddd;
   justify-content: center;
+  max-width: 1000px; /* add this */
+  margin: 0 auto; /* add this */
 }
 
 .card {
@@ -40,7 +42,51 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+.car-details {
+  font-size: small;
+  width: 50%;
+}
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 h1 {
   text-align: center;
   color: #555;
+}
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* add this */
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+/* add this */
+@media only screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
 }
