@@ -76,6 +76,30 @@ const cars = [
       "The Ferrari 365 GTB/4 was the immediate descendant for the much revered 275 GTB/4 and was first shown at the Paris motor show, 1968. The Daytona nickname was supposedly invented by Ferrari aficionados and affiliates of the media in acknowledgment of the factory’s unforgettable 1-2-3 triumph in the 1967 Daytona 24-hour edition. Alternatively, the story is that Ferrari had originally planned to employ the Daytona name, but changed their mind when news of the story leaked prior to the model’s reveal. The Tipo 251 engine was an improvement of the DOHC V12 of the 275 GTB/4, and at 4,390cc was roughly 33% larger in capacity. Six twin-choke Weber carburettors fed fuel to the engine, enabling it to produce 352bhp at 7,500rpm; enough to propel the 1,280kg machine to 60mph in under 5.5 seconds and on to a top speed of around 174mph, with a five-speed transaxle powering the rear wheels. Manufacture ran from 1968 to 1976, throughout which time a total of 1,406 examples are understood to have been built – 1,269 road-going Coupes and 122 official Spiders. The LHD example we are offering for sale was completed in 1971 and delivered new to North America via Bill Harrah’s Modern Classic Motors of Reno, Nevada.",
     ],
   },
+  {
+    name: "Lamborghini Reventon Roadster",
+    mileage: 1125,
+    year: 2010,
+    price: 1399950,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/46/Lamborghini_Revent%C3%B3n_Roadster.JPG",
+    summary: "Lamborghini Reventon Roadster. 1 of just 3 produced in RHD.",
+    description: [
+      "The Lamborghini Reventon was first unveiled at the 2007 Frankfurt Motor Show and was the most expensive Lamborghini road car ever produced. The Reventon share many of its mechanical components with the LP640 Murciélago but features a completely reworked exterior and interior, both of which were designed to imitate that of an F15 Fighter Jet. Just 20 Reventon Coupes were produced. The Reventon utilises the same 6.5 litre naturally aspirated V12 engine as found in the Murciélago, although the increased use of carbon fibre composites liberates an extra 10bhp over the Murciélago, bringing the total to a guaranteed 641bhp at 8000rpm, powering the Reventon to a top speed of 211mph. This power is deployed through a 6-speed e-gear semi-automatic gearbox with the same AWD system found in the Murciélago. All Reventons produced were finished in the same ‘Reventon’ Grey, a mid-opaque grey which mimics the paint used on the F15 Fighter Jets. The aerospace theme continues throughout the interior, with the Reventon utilising a cutting edge TFT liquid crystal dash display which can change from a digital display to a quasi-analogical display at the press of a button. In 2009 Lamborghini unveiled the Roadster variant of the Reventon, with an even smaller production run of just 15 units. The car we are pleased to offer is a 2010 model and is one of just three produced in RHD variant. It is a UK supplied car with just 2 owners from new and sits today in fantastic condition after covering just over 1,100 miles. The car also benefits from a fresh service with Lamborghini London, ensuring it is ready to be enjoyed by its next owner.",
+    ],
+  },
+  {
+    name: "Lamborghini Reventon Roadster",
+    mileage: 1125,
+    year: 2010,
+    price: 1399950,
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/4/46/Lamborghini_Revent%C3%B3n_Roadster.JPG",
+    summary: "Lamborghini Reventon Roadster. 1 of just 3 produced in RHD.",
+    description: [
+      "The Lamborghini Reventon was first unveiled at the 2007 Frankfurt Motor Show and was the most expensive Lamborghini road car ever produced. The Reventon share many of its mechanical components with the LP640 Murciélago but features a completely reworked exterior and interior, both of which were designed to imitate that of an F15 Fighter Jet. Just 20 Reventon Coupes were produced. The Reventon utilises the same 6.5 litre naturally aspirated V12 engine as found in the Murciélago, although the increased use of carbon fibre composites liberates an extra 10bhp over the Murciélago, bringing the total to a guaranteed 641bhp at 8000rpm, powering the Reventon to a top speed of 211mph. This power is deployed through a 6-speed e-gear semi-automatic gearbox with the same AWD system found in the Murciélago. All Reventons produced were finished in the same ‘Reventon’ Grey, a mid-opaque grey which mimics the paint used on the F15 Fighter Jets. The aerospace theme continues throughout the interior, with the Reventon utilising a cutting edge TFT liquid crystal dash display which can change from a digital display to a quasi-analogical display at the press of a button. In 2009 Lamborghini unveiled the Roadster variant of the Reventon, with an even smaller production run of just 15 units. The car we are pleased to offer is a 2010 model and is one of just three produced in RHD variant. It is a UK supplied car with just 2 owners from new and sits today in fantastic condition after covering just over 1,100 miles. The car also benefits from a fresh service with Lamborghini London, ensuring it is ready to be enjoyed by its next owner.",
+    ],
+  },
 ];
 
 module.exports = cars;

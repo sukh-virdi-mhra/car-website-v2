@@ -25,7 +25,7 @@ function Cars(props) {
   };
 
   return (
-    <div className="grid-container">
+    <div>
       <br />
       {typeof localData.cars === "undefined" ? (
         <p>Loading...</p>
