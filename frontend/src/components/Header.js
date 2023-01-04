@@ -7,12 +7,10 @@ const Header = () => {
       <div>
         <p>+44 (0) 20 5555 5555</p>
       </div>
-      <div className="header-center">
-        <h1> Veloce Virdi</h1>
-      </div>
+      <h1>Veloce Virdi</h1>
       <div className="header-right">
-        <div className="address-line">123-150 Main Street</div>
-        <div className="address-line">London SW15 3WC</div>
+        <div>123-150 Main Street</div>
+        <div>London SW15 3WC</div>
       </div>
     </div>
   );

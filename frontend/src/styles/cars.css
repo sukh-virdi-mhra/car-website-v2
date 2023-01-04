@@ -4,6 +4,20 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+h1 {
+  text-align: center;
+  color: #555;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*Cars*/
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
@@ -25,29 +39,10 @@ body {
   transition: 0.3s;
 }
 
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 5px 5px 0 0;
-}
-
-h1 {
-  text-align: center;
-  color: #555;
-}
-
 .card h3 {
   margin: 10px 0;
   font-size: 1.3em;
   text-transform: uppercase;
-}
-
-h2 {
-  margin: 10px 0;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .card p {
@@ -60,34 +55,11 @@ h2 {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+/*CarDetails*/
+
 .car-details {
   font-size: small;
   width: 50%;
-}
-
-.image-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 5px 5px 0 0;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.image-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -102,6 +74,17 @@ h2 {
   }
 }
 
+/*Footer*/
+
+.footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/*Header*/
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -111,54 +94,17 @@ h2 {
   border-bottom: 1px solid #ccc;
 }
 
-.header-title {
-  font-size: 1.5em;
-}
-
 .header-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-
-.header-info {
-  margin: 0;
-  font-size: 0.8em;
+  margin-right: 20px;
 }
 
 @media screen and (max-width: 600px) {
   .header-right {
     align-items: center;
   }
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-}
-
-.header h1 {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-.header-right {
-  margin-right: 20px;
-}
-
-.footer {
-  background-color: #eee;
-  text-align: center;
-  padding: 10px;
-  margin-top: 50px;
-}
-
-@media (max-width: 600px) {
   .header {
     flex-direction: column;
     height: auto;
@@ -170,4 +116,49 @@ h2 {
     padding-bottom: 10px;
     margin-left: 12px;
   }
+}
+
+/*Homepage*/
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://vipmotors.ae/wp-content/uploads/WhatsApp-Image-2020-10-26-at-13.59.48.jpeg");
+  height: 80vh;
+  background-size: cover;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .homepage {
+    height: auto;
+  }
+}
+
+.browse-cars-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .browse-cars-button {
+    font-size: 0.8em;
+    padding: 5px 10px;
+  }
+}
+.browse-cars-button:hover {
+  background-color: #555;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 }

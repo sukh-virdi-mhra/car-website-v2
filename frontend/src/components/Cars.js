@@ -36,7 +36,6 @@ function Cars(props) {
               <img
                 src={car.image}
                 alt={car.name}
-                className="card-image"
                 style={{ width: "100%", height: "200px" }}
               />
               <h3>{car.name}</h3>
@@ -60,6 +59,7 @@ function CarDetails(props) {
 
   return (
     <div>
+      <br />
       <h2>{car.name}</h2>
       <img src={car.image} alt={car.name} style={{ width: "100%" }} />
       <p>{car.summary}</p>
