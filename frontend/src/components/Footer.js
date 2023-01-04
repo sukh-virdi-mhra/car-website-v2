@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="footer">
       <p>
-        2023 Car Website. All Rights Reserved. Registered Company Number:
+        2023 Veloce Virdi. All Rights Reserved. Registered Company Number:
         312768209
       </p>
     </div>
