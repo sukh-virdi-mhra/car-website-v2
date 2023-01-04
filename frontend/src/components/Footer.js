@@ -1,12 +1,13 @@
 import React from "react";
-import "../styles/cars.css";
+import "../styles/styles.css";
 
 function Footer() {
+  let date = new Date();
   return (
     <div className="footer">
       <p>
-        2023 Veloce Virdi. All Rights Reserved. Registered Company Number:
-        312768209
+        {date.getFullYear()} Veloce Virdi. All Rights Reserved. Registered
+        Company Number: 312768209
       </p>
     </div>
   );

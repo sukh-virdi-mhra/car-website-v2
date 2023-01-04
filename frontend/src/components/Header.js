@@ -1,5 +1,4 @@
-import React from "react";
-import "../styles/cars.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,7 +6,9 @@ const Header = () => {
       <div>
         <p>+44 (0) 20 5555 5555</p>
       </div>
-      <h1>Veloce Virdi</h1>
+      <Link style={{ textDecoration: "none" }} to="/">
+        <h1>Veloce Virdi</h1>
+      </Link>
       <div className="header-right">
         <div>123-150 Main Street</div>
         <div>London SW15 3WC</div>
