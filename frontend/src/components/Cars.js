@@ -26,7 +26,7 @@ function Cars(props) {
 
   return (
     <div className="grid-container">
-      <h1 className="center-title">Favourite Cars</h1>
+      <h1 className="center-title"> Cars</h1>
       {typeof localData.cars === "undefined" ? (
         <p>Loading...</p>
       ) : (
@@ -39,7 +39,7 @@ function Cars(props) {
                 className="card-image"
                 style={{ width: "100%", height: "200px" }}
               />
-              <h2>{car.name}</h2>
+              <h3>{car.name}</h3>
               {car.price ? <p>{formatter.format(car.price)}</p> : <p>POA</p>}
             </div>
           ))}
@@ -60,7 +60,7 @@ function CarDetails(props) {
 
   return (
     <div>
-      <h1>{car.name}</h1>
+      <h2>{car.name}</h2>
       <img src={car.image} alt={car.name} style={{ width: "100%" }} />
       <p>{car.summary}</p>
       <p>{car.description}</p>
