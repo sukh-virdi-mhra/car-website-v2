@@ -37,6 +37,45 @@ const cars = [
       "The Ferrari 365 GTB/4 was the immediate descendant for the much revered 275 GTB/4 and was first shown at the Paris motor show, 1968. The Daytona nickname was supposedly invented by Ferrari aficionados and affiliates of the media in acknowledgment of the factory’s unforgettable 1-2-3 triumph in the 1967 Daytona 24-hour edition. Alternatively, the story is that Ferrari had originally planned to employ the Daytona name, but changed their mind when news of the story leaked prior to the model’s reveal. The Tipo 251 engine was an improvement of the DOHC V12 of the 275 GTB/4, and at 4,390cc was roughly 33% larger in capacity. Six twin-choke Weber carburettors fed fuel to the engine, enabling it to produce 352bhp at 7,500rpm; enough to propel the 1,280kg machine to 60mph in under 5.5 seconds and on to a top speed of around 174mph, with a five-speed transaxle powering the rear wheels. Manufacture ran from 1968 to 1976, throughout which time a total of 1,406 examples are understood to have been built – 1,269 road-going Coupes and 122 official Spiders. The LHD example we are offering for sale was completed in 1971 and delivered new to North America via Bill Harrah’s Modern Classic Motors of Reno, Nevada.",
     ],
   },
+  {
+    name: "Ferrari 365 GTB4 Daytona",
+    mileage: 26725,
+    year: 1971,
+    price: 439950,
+    image:
+      "https://www.supercars.net/blog/wp-content/uploads/2016/04/1970_Ferrari_365GTB4Daytona1-e1611434522403.jpg",
+    summary:
+      "U.S. Supplied Ferrari 365 GTB/4 Daytona finished in Rosso over Nero.",
+    description: [
+      "The Ferrari 365 GTB/4 was the immediate descendant for the much revered 275 GTB/4 and was first shown at the Paris motor show, 1968. The Daytona nickname was supposedly invented by Ferrari aficionados and affiliates of the media in acknowledgment of the factory’s unforgettable 1-2-3 triumph in the 1967 Daytona 24-hour edition. Alternatively, the story is that Ferrari had originally planned to employ the Daytona name, but changed their mind when news of the story leaked prior to the model’s reveal. The Tipo 251 engine was an improvement of the DOHC V12 of the 275 GTB/4, and at 4,390cc was roughly 33% larger in capacity. Six twin-choke Weber carburettors fed fuel to the engine, enabling it to produce 352bhp at 7,500rpm; enough to propel the 1,280kg machine to 60mph in under 5.5 seconds and on to a top speed of around 174mph, with a five-speed transaxle powering the rear wheels. Manufacture ran from 1968 to 1976, throughout which time a total of 1,406 examples are understood to have been built – 1,269 road-going Coupes and 122 official Spiders. The LHD example we are offering for sale was completed in 1971 and delivered new to North America via Bill Harrah’s Modern Classic Motors of Reno, Nevada.",
+    ],
+  },
+  {
+    name: "Ferrari 365 GTB4 Daytona",
+    mileage: 26725,
+    year: 1971,
+    price: 439950,
+    image:
+      "https://www.supercars.net/blog/wp-content/uploads/2016/04/1970_Ferrari_365GTB4Daytona1-e1611434522403.jpg",
+    summary:
+      "U.S. Supplied Ferrari 365 GTB/4 Daytona finished in Rosso over Nero.",
+    description: [
+      "The Ferrari 365 GTB/4 was the immediate descendant for the much revered 275 GTB/4 and was first shown at the Paris motor show, 1968. The Daytona nickname was supposedly invented by Ferrari aficionados and affiliates of the media in acknowledgment of the factory’s unforgettable 1-2-3 triumph in the 1967 Daytona 24-hour edition. Alternatively, the story is that Ferrari had originally planned to employ the Daytona name, but changed their mind when news of the story leaked prior to the model’s reveal. The Tipo 251 engine was an improvement of the DOHC V12 of the 275 GTB/4, and at 4,390cc was roughly 33% larger in capacity. Six twin-choke Weber carburettors fed fuel to the engine, enabling it to produce 352bhp at 7,500rpm; enough to propel the 1,280kg machine to 60mph in under 5.5 seconds and on to a top speed of around 174mph, with a five-speed transaxle powering the rear wheels. Manufacture ran from 1968 to 1976, throughout which time a total of 1,406 examples are understood to have been built – 1,269 road-going Coupes and 122 official Spiders. The LHD example we are offering for sale was completed in 1971 and delivered new to North America via Bill Harrah’s Modern Classic Motors of Reno, Nevada.",
+    ],
+  },
+  {
+    name: "Ferrari 365 GTB4 Daytona",
+    mileage: 26725,
+    year: 1971,
+    price: 439950,
+    image:
+      "https://www.supercars.net/blog/wp-content/uploads/2016/04/1970_Ferrari_365GTB4Daytona1-e1611434522403.jpg",
+    summary:
+      "U.S. Supplied Ferrari 365 GTB/4 Daytona finished in Rosso over Nero.",
+    description: [
+      "The Ferrari 365 GTB/4 was the immediate descendant for the much revered 275 GTB/4 and was first shown at the Paris motor show, 1968. The Daytona nickname was supposedly invented by Ferrari aficionados and affiliates of the media in acknowledgment of the factory’s unforgettable 1-2-3 triumph in the 1967 Daytona 24-hour edition. Alternatively, the story is that Ferrari had originally planned to employ the Daytona name, but changed their mind when news of the story leaked prior to the model’s reveal. The Tipo 251 engine was an improvement of the DOHC V12 of the 275 GTB/4, and at 4,390cc was roughly 33% larger in capacity. Six twin-choke Weber carburettors fed fuel to the engine, enabling it to produce 352bhp at 7,500rpm; enough to propel the 1,280kg machine to 60mph in under 5.5 seconds and on to a top speed of around 174mph, with a five-speed transaxle powering the rear wheels. Manufacture ran from 1968 to 1976, throughout which time a total of 1,406 examples are understood to have been built – 1,269 road-going Coupes and 122 official Spiders. The LHD example we are offering for sale was completed in 1971 and delivered new to North America via Bill Harrah’s Modern Classic Motors of Reno, Nevada.",
+    ],
+  },
 ];
 
 module.exports = cars;

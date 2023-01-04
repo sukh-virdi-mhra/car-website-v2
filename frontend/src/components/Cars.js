@@ -16,6 +16,8 @@ function Cars(props) {
   const formatter = new Intl.NumberFormat("en-GB", {
     style: "currency",
     currency: "GBP",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
   });
 
   const handleCardClick = (car) => {
@@ -47,12 +49,13 @@ function Cars(props) {
     </div>
   );
 }
-
 function CarDetails(props) {
   const { car } = props;
   const formatter = new Intl.NumberFormat("en-GB", {
     style: "currency",
     currency: "GBP",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
   });
 
   return (
@@ -67,5 +70,4 @@ function CarDetails(props) {
     </div>
   );
 }
-
 export default Cars;
