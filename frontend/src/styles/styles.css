@@ -36,6 +36,12 @@ a {
 
 /* Cars */
 
+.cars {
+  border-bottom: 1px solid #ccc;
+  padding: 0 150px;
+  padding-bottom: 20px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
@@ -47,6 +53,8 @@ a {
 .card {
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 0.2s;
 }
 
 .card p {
@@ -57,6 +65,7 @@ a {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  opacity: 0.5;
 }
 
 .inside {
@@ -97,6 +106,7 @@ a {
 
 .homepage__header {
   text-align: left;
+  border-bottom: 1px solid #ccc;
 }
 .header-right {
   opacity: 1;
