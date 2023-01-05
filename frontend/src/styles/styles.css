@@ -19,14 +19,13 @@ h2 {
   text-align: left;
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
 p {
   text-decoration: none;
   color: inherit;
-}
-
-li {
-  margin: 0 20px;
-  text-align: center;
 }
 
 a {
@@ -50,12 +49,6 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card h3 {
-  margin: 10px 0;
-  font-size: 1.3em;
-  text-transform: uppercase;
-}
-
 .card p {
   margin: 10px 0;
   font-size: 1.2em;
@@ -64,6 +57,11 @@ a {
 
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.inside {
+  list-style-position: inside;
+  padding-left: 0;
 }
 
 /* Footer */
@@ -110,9 +108,14 @@ a {
   border-bottom: 1px solid #ccc;
 }
 
-.nav-list {
+.nav-unordered-list {
   list-style: none;
   display: flex;
+}
+
+.nav-list {
+  margin: 0 20px;
+  text-align: center;
 }
 
 /* Mobile styling */

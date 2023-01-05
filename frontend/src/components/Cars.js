@@ -50,11 +50,14 @@ function Cars(props) {
 }
 function CarDetails(props) {
   const { car } = props;
-  const formatter = new Intl.NumberFormat("en-GB", {
+  const priceFormatter = new Intl.NumberFormat("en-GB", {
     style: "currency",
     currency: "GBP",
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
+  });
+  const mileageFormatter = new Intl.NumberFormat("en-GB", {
+    useGrouping: true,
   });
 
   return (
@@ -62,12 +65,22 @@ function CarDetails(props) {
       <br />
       <h2>{car.name}</h2>
       <img src={car.image} alt={car.name} style={{ width: "100%" }} />
-      <p>{car.summary}</p>
-      <p>{car.description}</p>
-      <p>Price: {car.price ? formatter.format(car.price) : <span>POA</span>}</p>
-      <p>Mileage: {car.mileage}</p>
-      <p>Year: {car.year}</p>
+      <h3>Overview</h3>
+      <p>{car.overview}</p>
+      <h3>Specifications</h3>
+      <ul className="inside">
+        {car.specifications.map((specification) => (
+          <li key={specification}>{specification}</li>
+        ))}
+      </ul>
+      <h3>Price</h3>
+      <p>{car.price ? priceFormatter.format(car.price) : <span>POA</span>}</p>
+      <h3>Mileage</h3>
+      <p>{mileageFormatter.format(car.mileage)}</p>
+      <h3>Year</h3>
+      <p>{car.year}</p>
     </div>
   );
 }
+
 export default Cars;

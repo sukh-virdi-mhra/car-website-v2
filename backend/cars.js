@@ -1,15 +1,20 @@
 const cars = [
   {
-    name: "Porsche Carrera GT",
-    mileage: 14450,
-    year: 2006,
+    name: "Bugatti Veyron Grand Sport Roadster",
+    mileage: 2720,
+    year: 2013,
     price: "",
-    image:
-      "https://f7432d8eadcf865aa9d9-9c672a3a4ecaaacdf2fee3b3e6fd2716.ssl.cf3.rackcdn.com/C2299/U8363/IMG_33994-large.jpg",
-    summary:
-      "EU Supplied Carrera GT finished in A1 Solid Black over Black leather interior.",
-    description: [
-      "Launched at the Geneva Salon in 2003, the Porsche Carrera GT was arguably the most extreme road-legal model in the Stuttgart firm’s history. Unsurprisingly, the German supercar was received with unrivalled enthusiasm and a rush of orders with 1,270 examples being produced between 2004 and 2006. Porsche’s new supercar broke new ground in many ways; it was the company’s first product to utilize an immensely strong but lightweight monocoque cabin and engine support unit of CFP (carbon fibre-reinforced plastic) with steel bracing around the windshield and passenger compartment. The front and rear suspension was based on state-of-the-art racing design, with upper and lower stainless-steel wishbones and inboard-mounted, rocker-arm-operated coil-over shock absorbers at all four corners. Huge ventilated and cross-drilled carbon-ceramic disc brakes were managed by multi-piston rear light-alloy callipers fitted behind forged magnesium-alloy centre-lock road wheels. Furthermore, the Formula One-derived V-10 engine now had a home. Sized at 5.7-liters in production form, this marvellous 40-valve powerplant developed an astonishing 613 horsepower at 8,000 rpm and 435 pound-feet of torque at 5,750 rpm. Power was delivered through a six-speed manual transaxle. To keep the car’s centre of gravity as low as possible, the engine employed dry-sump lubrication. The bodywork incorporated large air intake and exhaust vents, as well as a pair of removable CFP roof panels that could be stored within, a rear air diffuser, and a stability-enhancing rear wing that rose automatically at 75 mph. The leather interior was luxurious, with every amenity, and included a large digital information screen. At the centre of the cockpit is a gear selector knob made of birch and ash, Porsche’s subtle nod to the wooden shift knob on the storied 917. The Carrera GT was fitted with numerous safety systems, including traction control and anti-lock braking, all vital to a machine capable of 0–60 times of three seconds and a maximum speed of 200 mph, quite remarkable for a normally aspirated road car.",
+    image: "https://gvelondon.com/wp-content/uploads/2022/09/9-4.jpg",
+    overview:
+      "Here is an opportunity to own one of the greatest achievements in all of automotive history. Introducing our Bugatti Veyron Grand Sport Roadster! Limited to 150 units worldwide, this is one of the fastest production Roadster's in history with a top speed of 407km/h with the roof up and 360km/h with the roof down. Like the 16.4, the Grand Sport produces 1001HP and sprints from zero to 60 mph in just 2.7 seconds. This car demonstrates that it is possible to create a roadster version of a hypercar whilst maintaining the incredible speed and dynamics without compromising on comfort and safety. By removing the roof, the passengers are directly exposed to the 8.0 litre quad turbo W16 which increases the unique and emotional experience of the Veyron and the transparent roof allows drivers to directly experience their surroundings, even when the roof is up. The larger Roof Spoiler allows for a more comfortable and relaxed drive at such speeds by reducing noise in the cabin making for the perfect roof down drive. This stunning UK Supplied Bugatti Veyron Grand Sport Roadster has been finished in Pearl White and has been fitted with Polished Alloy Wheels with Diamond Cut Surfaces complete with black brake calipers. This example includes Carbon Fibre Front Spoiler as well as Black Leather Interior with Berry White Contrast Stitching. This vehicle is UK supplied and has been kept in pristine condition as shown by its full Bugatti Service History. Walk around video available upon request. Nationwide delivery available. All vehicles undergo a full visual and mechanical health check by GVE Servicing and preparation by GVE detailing. Get in touch with any customisation or servicing needs. Please call to confirm specifications as variations can occur. Excellent bodywork, Interior - Excellent Condition, Tyre condition Excellent, 12 Month warranty available - JBR/ Aldermore/ Black Horse Partner. Major credit/ debit cards accepted. Please view on our website.",
+    specifications: [
+      "Pearl White Exterior Paint",
+      "Polished Alloy Wheels with Diamond Cut Surfaces",
+      "Black Brake Calipers",
+      "Carbon Fibre Front Splitter",
+      "Air Intakes in Black",
+      "Black Leather Interior",
+      "Contrast Stitching in Berry White",
     ],
   },
   {
