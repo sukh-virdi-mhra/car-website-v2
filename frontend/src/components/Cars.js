@@ -65,6 +65,12 @@ function CarDetails(props) {
       <br />
       <h2>{car.name}</h2>
       <img src={car.image} alt={car.name} style={{ width: "100%" }} />
+      <h3>Year</h3>
+      <p>{car.year}</p>
+      <h3>Mileage</h3>
+      <p>{mileageFormatter.format(car.mileage)}</p>
+      <h3>Price</h3>
+      <p>{car.price ? priceFormatter.format(car.price) : <span>POA</span>}</p>
       <h3>Overview</h3>
       <p>{car.overview}</p>
       <h3>Specifications</h3>
@@ -73,12 +79,6 @@ function CarDetails(props) {
           <li key={specification}>{specification}</li>
         ))}
       </ul>
-      <h3>Price</h3>
-      <p>{car.price ? priceFormatter.format(car.price) : <span>POA</span>}</p>
-      <h3>Mileage</h3>
-      <p>{mileageFormatter.format(car.mileage)}</p>
-      <h3>Year</h3>
-      <p>{car.year}</p>
     </div>
   );
 }
