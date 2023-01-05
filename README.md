@@ -13,7 +13,7 @@ This website is built using ReactJS for the frontend and NodeJS for the backend.
 * Make sure you have NodeJS and npm installed on your machine
 * Clone the repository and navigate to the root folder.
 * Run npm install in both the backend and frontend directories to install the required dependencies.
-* Run run dev in the backend to start the backend and npm start to start the frontend.
+* Run npm run dev to start the backend and npm start to start the frontend witin their directories in tandem.
 
 The website should now be running on http://localhost:3000.
 
