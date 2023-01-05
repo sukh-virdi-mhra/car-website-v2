@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
-      <div className="header-right">
+      <div className="header-left">
         <a
           href="tel:+442055555555"
           style={{ textDecoration: "none", color: "inherit" }}

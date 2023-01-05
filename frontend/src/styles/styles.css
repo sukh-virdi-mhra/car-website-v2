@@ -107,6 +107,15 @@ a {
   opacity: 0.5;
 }
 
+.header-left {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.header-left:hover {
+  opacity: 0.5;
+}
+
 .image-grid {
   display: flex;
   flex-wrap: wrap;
@@ -151,6 +160,62 @@ a {
   opacity: 0.5;
 }
 
+/* Contact */
+
+.contact {
+  padding: 0 150px;
+}
+
+.contact-form {
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.form-header {
+  margin: 0 0 20px 0;
+  font-size: 32px;
+}
+
+.form-description {
+  font-size: 16px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(169, 169, 169);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgb(169, 169, 169);
+}
+
 /* Mobile styling */
 
 @media only screen and (max-width: 1000px) {
@@ -175,12 +240,16 @@ a {
     position: relative;
     bottom: 0;
   }
-  .homepage {
-    height: auto;
-    background-size: 500px auto;
-    background-repeat: no-repeat;
-  }
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .contact-form {
+    width: 100%;
+  }
+  .contact-form label {
+    width: 100%;
+  }
+  .contact-form input {
+    width: 100%;
   }
 }
