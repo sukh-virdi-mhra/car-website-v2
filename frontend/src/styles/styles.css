@@ -98,6 +98,33 @@ a {
 .homepage__header {
   text-align: left;
 }
+.header-right {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.header-right:hover {
+  opacity: 0.5;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-grid img {
+  width: calc(20% - 5px); /* Reduce the width of the images */
+  height: calc(25% - 10px); /* Set the height to be 25% as well */
+  margin-bottom: 5px;
+  transform: scale(0.6);
+  opacity: 1; /* Set the initial opacity to 1 (fully opaque) */
+  transition: opacity 0.2s; /* Add a transition for the opacity property */
+}
+
+.image-grid img:hover {
+  opacity: 0.5; /* Set the hover opacity to 0.5 (semi-transparent) */
+}
 
 /* Navbar */
 
@@ -116,6 +143,12 @@ a {
 .nav-list {
   margin: 0 20px;
   text-align: center;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.nav-list:hover {
+  opacity: 0.5;
 }
 
 /* Mobile styling */
