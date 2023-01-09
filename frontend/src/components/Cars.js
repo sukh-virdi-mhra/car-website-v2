@@ -3,7 +3,6 @@ import "../styles/styles.css";
 
 function Cars(props) {
   const [localData, setLocalData] = useState([{}]);
-  const [selectedCar, setSelectedCar] = useState(null);
   const [date, setDate] = useState(new Date());
 
   useEffect(() => {
@@ -22,7 +21,8 @@ function Cars(props) {
   });
 
   const handleCardClick = (car) => {
-    setSelectedCar(car);
+    props.setSelectedCar(car);
+    props.navigate(`/cars/selected/${car.name}`);
   };
 
   useEffect(() => {
@@ -84,42 +84,7 @@ function Cars(props) {
             ))}
           </div>
         )}
-        {selectedCar ? <CarDetails car={selectedCar} /> : null}
       </div>
-    </div>
-  );
-}
-function CarDetails(props) {
-  const { car } = props;
-  const priceFormatter = new Intl.NumberFormat("en-GB", {
-    style: "currency",
-    currency: "GBP",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  });
-  const mileageFormatter = new Intl.NumberFormat("en-GB", {
-    useGrouping: true,
-  });
-
-  return (
-    <div>
-      <br />
-      <h2 className="homepage__header">{car.name}</h2>
-      <img src={car.image} alt={car.name} style={{ width: "100%" }} />
-      <h3>Year</h3>
-      <p>{car.year}</p>
-      <h3>Mileage</h3>
-      <p>{mileageFormatter.format(car.mileage)}</p>
-      <h3>Price</h3>
-      <p>{car.price ? priceFormatter.format(car.price) : <span>POA</span>}</p>
-      <h3>Overview</h3>
-      <p>{car.overview}</p>
-      <h3>Specifications</h3>
-      <ul className="inside">
-        {car.specifications.map((specification) => (
-          <li key={specification}>{specification}</li>
-        ))}
-      </ul>
     </div>
   );
 }
