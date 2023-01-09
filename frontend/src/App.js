@@ -30,7 +30,7 @@ export default function App() {
         />
         <Route path="/contact" element={<Contact />} />
         <Route
-          path="/stock/:carname"
+          path="/stock/:carname/:id"
           element={
             <CarDetails
               selectedCar={selectedCar}

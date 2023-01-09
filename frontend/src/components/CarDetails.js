@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import "../styles/styles.css";
 
 export default function CarDetails(props) {
-  let { carname } = useParams();
+  let { carid } = useParams();
   const [returnedData, setReturnedData] = useState(false);
 
   function searchDatabase() {
@@ -11,7 +11,7 @@ export default function CarDetails(props) {
       .then((response) => response.json())
       .then((data) => {
         data.cars.forEach((element) => {
-          if (element.name == carname) {
+          if (element.id == carid) {
             props.setSelectedCar(element);
             return element;
           }

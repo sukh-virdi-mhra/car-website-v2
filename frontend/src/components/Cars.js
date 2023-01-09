@@ -22,7 +22,7 @@ function Cars(props) {
 
   const handleCardClick = (car) => {
     props.setSelectedCar(car);
-    props.navigate(`/stock/${car.name}`);
+    props.navigate(`/stock/${car.name}/${car.id}`);
   };
 
   useEffect(() => {
