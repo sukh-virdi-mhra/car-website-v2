@@ -19,7 +19,7 @@ export default function App() {
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route
-          path="/cars"
+          path="/cars-for-sale"
           element={
             <Cars
               navigate={navigate}
@@ -30,7 +30,7 @@ export default function App() {
         />
         <Route path="/contact" element={<Contact />} />
         <Route
-          path="/cars/selected/:carname"
+          path="/stock/:carname"
           element={
             <CarDetails
               selectedCar={selectedCar}
