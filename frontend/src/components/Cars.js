@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import "../styles/styles.css";
 
 function Cars(props) {
-  const [localData, setLocalData] = useState([{}]);
+  const [localData, setLocalData] = useState([]);
   const [date, setDate] = useState(new Date());
-  console.log(props);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(9);
 
   useEffect(() => {
     fetch("/api")
@@ -37,9 +38,25 @@ function Cars(props) {
     setDate(new Date());
   }
 
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems =
+    localData.cars && localData.cars.slice(indexOfFirstItem, indexOfLastItem);
+
+  const pageNumbers = [];
+  if (localData.cars) {
+    for (let i = 1; i <= Math.ceil(localData.cars.length / itemsPerPage); i++) {
+      pageNumbers.push(i);
+    }
+  }
+
   return (
     <div className="cars">
-      <br />{" "}
+      <br />
       <div className="homepage__content">
         <h2 className="homepage__header">
           Current Inventory as of{" "}
@@ -68,7 +85,7 @@ function Cars(props) {
           <p>Loading...</p>
         ) : (
           <div className="grid">
-            {localData.cars.map((car, i) => (
+            {currentItems.map((car, i) => (
               <div
                 key={i}
                 className="card"
@@ -85,6 +102,15 @@ function Cars(props) {
             ))}
           </div>
         )}
+        {localData.cars && localData.cars.length > 0 ? (
+          <div className="pagination">
+            {pageNumbers.map((number) => (
+              <span key={number} onClick={() => handlePageChange(number)}>
+                {number}
+              </span>
+            ))}
+          </div>
+        ) : null}
       </div>
     </div>
   );
