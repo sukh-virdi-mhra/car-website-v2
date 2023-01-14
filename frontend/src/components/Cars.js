@@ -46,7 +46,6 @@ function Cars(props) {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems =
     localData.cars && localData.cars.slice(indexOfFirstItem, indexOfLastItem);
-
   const pageNumbers = [];
   if (localData.cars) {
     for (let i = 1; i <= Math.ceil(localData.cars.length / itemsPerPage); i++) {
