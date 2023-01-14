@@ -199,6 +199,26 @@ a {
   width: 40%;
 }
 
+.more-image-grid img {
+  width: 24%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.more-image-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-image-grid img:first-child {
+  margin-right: 10px;
+}
+
+.more-image-grid img:last-child {
+  margin-right: 10px;
+}
+
 /* Navbar */
 
 .navbar {
@@ -335,5 +355,9 @@ form button:hover {
   }
   .specification-container {
     grid-template-columns: 1fr;
+  }
+  .more-image-grid img {
+    width: 100%;
+    margin-right: 0;
   }
 }

@@ -35,6 +35,7 @@ export default function CarDetails(props) {
   if (!returnedData) {
     searchDatabase();
   } else {
+    console.log(props.selectedCar);
     return (
       <div className="car__details">
         <br />
@@ -94,6 +95,20 @@ export default function CarDetails(props) {
                 ))}
             </ul>
           </div>
+        </div>
+        <br />
+        <div className="more-image-grid">
+          {props.selectedCar.moreImages &&
+          props.selectedCar.moreImages.length > 0 ? (
+            <div
+              className="more-image-grid"
+              style={{ display: "flex", flexWrap: "wrap" }}
+            >
+              {props.selectedCar.moreImages.map((image, index) => (
+                <img src={image} key={index} />
+              ))}
+            </div>
+          ) : null}
         </div>
       </div>
     );
