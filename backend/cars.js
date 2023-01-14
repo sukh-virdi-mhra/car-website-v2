@@ -415,4 +415,4 @@ const cars = [
   },
 ];
 
-module.exports = cars;
+export default cars;

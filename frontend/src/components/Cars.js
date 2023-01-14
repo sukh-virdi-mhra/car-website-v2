@@ -95,8 +95,14 @@ function Cars(props) {
                   alt={car.name}
                   style={{ width: "100%", height: "200px" }}
                 />
-                <h3>{car.name}</h3>
-                {car.price ? <p>{formatter.format(car.price)}</p> : <p>POA</p>}
+                <h3 class="pad">{car.name}</h3>
+                <div class="price-container">
+                  {car.price ? (
+                    <p>{formatter.format(car.price)}</p>
+                  ) : (
+                    <p>POA</p>
+                  )}
+                </div>
               </div>
             ))}
           </div>

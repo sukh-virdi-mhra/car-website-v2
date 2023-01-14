@@ -38,8 +38,12 @@ a {
 
 .cars {
   border-bottom: 1px solid #ccc;
-
   padding-bottom: 20px;
+}
+
+.pad {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .grid {
@@ -51,6 +55,10 @@ a {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   opacity: 1;
@@ -61,6 +69,7 @@ a {
   margin: 10px 0;
   font-size: 1.2em;
   color: grey;
+  align-self: flex-end;
 }
 
 .card:hover {

@@ -44,7 +44,7 @@ export default function CarDetails(props) {
           <img
             src={props.selectedCar.image}
             alt={props.selectedCar.name}
-            style={{ width: "100%" }}
+            style={{ width: "50%" }}
           />
           <h3>Year</h3>
           <p>{props.selectedCar.year}</p>
