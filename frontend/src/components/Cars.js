@@ -4,6 +4,7 @@ import "../styles/styles.css";
 function Cars(props) {
   const [localData, setLocalData] = useState([{}]);
   const [date, setDate] = useState(new Date());
+  console.log(props);
 
   useEffect(() => {
     fetch("/api")
@@ -30,7 +31,7 @@ function Cars(props) {
     return function cleanup() {
       clearInterval(timerID);
     };
-  });
+  }, []);
 
   function tick() {
     setDate(new Date());

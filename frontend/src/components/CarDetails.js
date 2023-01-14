@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import "../styles/styles.css";
 
 export default function CarDetails(props) {
-  let { carid } = useParams();
+  let { carname, id } = useParams();
+
   const [returnedData, setReturnedData] = useState(false);
 
   function searchDatabase() {
@@ -11,7 +12,7 @@ export default function CarDetails(props) {
       .then((response) => response.json())
       .then((data) => {
         data.cars.forEach((element) => {
-          if (element.id == carid) {
+          if (element.id == id) {
             props.setSelectedCar(element);
             return element;
           }
@@ -36,34 +37,36 @@ export default function CarDetails(props) {
     searchDatabase();
   } else {
     return (
-      <div>
-        <br />
-        <h2 className="homepage__header">{props.selectedCar.name}</h2>
-        <img
-          src={props.selectedCar.image}
-          alt={props.selectedCar.name}
-          style={{ width: "100%" }}
-        />
-        <h3>Year</h3>
-        <p>{props.selectedCar.year}</p>
-        <h3>Mileage</h3>
-        <p>{mileageFormatter.format(props.selectedCar.mileage)}</p>
-        <h3>Price</h3>
-        <p>
-          {props.selectedCar.price ? (
-            priceFormatter.format(props.selectedCar.price)
-          ) : (
-            <span>POA</span>
-          )}
-        </p>
-        <h3>Overview</h3>
-        <p>{props.selectedCar.overview}</p>
-        <h3>Specifications</h3>
-        <ul className="inside">
-          {props.selectedCar.specifications.map((specification) => (
-            <li key={specification}>{specification}</li>
-          ))}
-        </ul>
+      <div className="cars">
+        <div className="homepage__content">
+          <br />
+          <h2 className="homepage__header">{props.selectedCar.name}</h2>
+          <img
+            src={props.selectedCar.image}
+            alt={props.selectedCar.name}
+            style={{ width: "100%" }}
+          />
+          <h3>Year</h3>
+          <p>{props.selectedCar.year}</p>
+          <h3>Mileage</h3>
+          <p>{mileageFormatter.format(props.selectedCar.mileage)}</p>
+          <h3>Price</h3>
+          <p>
+            {props.selectedCar.price ? (
+              priceFormatter.format(props.selectedCar.price)
+            ) : (
+              <span>POA</span>
+            )}
+          </p>
+          <h3>Overview</h3>
+          <p>{props.selectedCar.overview}</p>
+          <h3>Specifications</h3>
+          <ul className="inside">
+            {props.selectedCar.specifications.map((specification) => (
+              <li key={specification}>{specification}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   }
