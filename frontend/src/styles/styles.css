@@ -73,6 +73,19 @@ a {
   padding-left: 0;
 }
 
+.pagination {
+  text-align: center;
+}
+
+.page-button {
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.page-button:hover {
+  background-color: #ddd;
+}
+
 /* Footer */
 
 .footer {

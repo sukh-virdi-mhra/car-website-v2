@@ -104,8 +104,14 @@ function Cars(props) {
         )}
         {localData.cars && localData.cars.length > 0 ? (
           <div className="pagination">
+            <br />
+            <br />
             {pageNumbers.map((number) => (
-              <span key={number} onClick={() => handlePageChange(number)}>
+              <span
+                key={number}
+                className="page-button"
+                onClick={() => handlePageChange(number)}
+              >
                 {number}
               </span>
             ))}
