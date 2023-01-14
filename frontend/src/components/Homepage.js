@@ -27,43 +27,43 @@ const Homepage = () => {
         <div className="image-grid">
           <img
             src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Ferrari-Logo.png"
-            alt="Image 1"
+            alt="Manufacturer 1"
           />
           <img
             src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Porsche-Logo.png"
-            alt="Image 2"
+            alt="Manufacturer 2"
           />
           <img
             src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Rolls-Royce-Logo.png"
-            alt="Image 3"
+            alt="Manufacturer 3"
           />
           <img
             src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Bugatti-Logo.png"
-            alt="Image 4"
+            alt="Manufacturer 4"
           />
           <img
             src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Aston-Martin-Logo.png"
-            alt="Image 5"
+            alt="Manufacturer 5"
           />
           <img
             src="https://www.supercars.net/blog/wp-content/uploads/2019/12/McLaren-Logo.png"
-            alt="Image 6"
+            alt="Manufacturer 6"
           />
           <img
             src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Lamborghini-Logo.png"
-            alt="Image 7"
+            alt="Manufacturer 7"
           />
           <img
             src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Mercedes-Logo.png"
-            alt="Image 8"
+            alt="Manufacturer 8"
           />
           <img
             src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Pagani-Logo.png"
-            alt="Image 9"
+            alt="Manufacturer 9"
           />
           <img
             src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Koenigsegg-Logo.png"
-            alt="Image 10"
+            alt="Manufacturer 10"
           />
         </div>
       </div>

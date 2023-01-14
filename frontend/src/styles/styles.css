@@ -34,6 +34,11 @@ a {
   font-size: 1.2em;
 }
 
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
 /* Cars */
 
 .cars {
@@ -167,6 +172,33 @@ a {
   opacity: 0.5;
 }
 
+/* Car Details */
+
+.car__details {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.cardetails__content {
+  padding: 0 150px;
+}
+
+.cardetails__header {
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.car-image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.center-image {
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+
 /* Navbar */
 
 .navbar {
@@ -268,6 +300,9 @@ form button:hover {
   .homepage__content {
     padding: 0;
   }
+  .cardetails__content {
+    padding: 0;
+  }
   .footer {
     position: relative;
     bottom: 0;
@@ -287,5 +322,18 @@ form button:hover {
   }
   .contact-form input {
     width: 100%;
+  }
+
+  .car-image-container {
+    flex-wrap: wrap;
+  }
+  .car-image-container img {
+    width: 100%;
+  }
+  .cardetails__content {
+    width: 100%;
+  }
+  .specification-container {
+    grid-template-columns: 1fr;
   }
 }
