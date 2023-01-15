@@ -10,21 +10,28 @@ const Contact = () => {
     car: "",
     message: "",
   });
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const { firstName, lastName, email, phone, car, message } = formData;
-
-    fetch("/send-email", {
-      method: "POST",
-      body: JSON.stringify({ firstName, lastName, email, phone, car, message }),
-      headers: { "Content-Type": "application/json" },
-    })
-      .then((res) => res.json())
-      .then((response) => {
-        console.log("Success:", JSON.stringify(response));
-      })
-      .catch((error) => console.error("Error:", error));
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+    try {
+      const response = await fetch("/send-email", {
+        method: "POST",
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email,
+          phone,
+          car,
+          message,
+        }),
+        headers: { "Content-Type": "application/json" },
+      });
+      const json = await response.json();
+      console.log("Success:", JSON.stringify(json));
+    } catch (error) {
+      console.error("Error:", error);
+    }
   };
 
   return (

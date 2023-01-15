@@ -10,7 +10,7 @@ app.get("/api", (req, res) => {
 
 app.use(express.json());
 
-app.post("/send-email", (req, res) => {
+app.post("/send-email", async (req, res) => {
   const { firstName, lastName, email, phone, car, message } = req.body;
   const transporter = nodemailer.createTransport({
     service: "outlook",
@@ -33,6 +33,36 @@ Message: ${message}
 `,
   };
   transporter.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log(error);
+    } else {
+      console.log("Email sent: " + info.response);
+    }
+  });
+
+  const automatedMailOptions = {
+    from: config.email,
+    to: email,
+    subject: "Thank you for contacting us",
+    text: `
+    
+Dear ${firstName} ${lastName}, 
+
+Thank you for your interest in our cars. We have received your inquiry and will get back to you as soon as possible. 
+
+Here is a summary of your inquiry:
+First Name: ${firstName}
+Last Name: ${lastName}
+Email: ${email}
+Phone: ${phone}
+Car: ${car}
+Message: ${message}
+
+Veloce Virdi
+    `,
+  };
+  await new Promise((resolve) => setTimeout(resolve, 10000));
+  transporter.sendMail(automatedMailOptions, function (error, info) {
     if (error) {
       console.log(error);
     } else {
