@@ -35,8 +35,7 @@ a {
 }
 
 .no-margin {
-  margin: 0;
-  padding: 0;
+  margin: 1;
 }
 
 /* Cars */
@@ -85,6 +84,14 @@ a {
 .inside {
   list-style-position: inside;
   padding-left: 0;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.specification-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination {
@@ -188,11 +195,6 @@ a {
   border-bottom: 1px solid #ccc;
 }
 
-.car-image-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .center-image {
   align-items: center;
   justify-content: center;
@@ -217,6 +219,14 @@ a {
 
 .more-image-grid img:last-child {
   margin-right: 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.image-viewer-container {
+  text-align: center;
 }
 
 /* Navbar */
@@ -359,5 +369,17 @@ form button:hover {
   .more-image-grid img {
     width: 100%;
     margin-right: 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container img {
+    width: 100%;
+  }
+  .specification-container {
+    display: block;
+  }
+  .inside {
+    width: 100%;
   }
 }

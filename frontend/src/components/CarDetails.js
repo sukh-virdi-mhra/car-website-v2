@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "../styles/styles.css";
+import { ImageViewer } from "react-image-viewer-dv";
 
 export default function CarDetails(props) {
   let { id } = useParams();
@@ -43,17 +44,20 @@ export default function CarDetails(props) {
           <h2 className="cardetails__header">{props.selectedCar.name}</h2>
           <br />
           <div
-            className="car-image-container"
+            className="container"
             style={{
               display: "flex",
               justifyContent: "center",
             }}
           >
-            <img
-              src={props.selectedCar.image}
-              alt={props.selectedCar.name}
-              className="center-image"
-            />
+            <ImageViewer>
+              <img
+                src={props.selectedCar.image}
+                alt={props.selectedCar.name}
+                style={{ maxWidth: "800px" }}
+              />
+            </ImageViewer>
+
             <div className="cardetails__content">
               <h3>Mileage</h3>
               <p>{mileageFormatter.format(props.selectedCar.mileage)}</p>
@@ -73,18 +77,15 @@ export default function CarDetails(props) {
           <p>{props.selectedCar.overview}</p>
           <h3 className="no-margin">Specifications</h3>
 
-          <div
-            className="specification-container"
-            style={{ display: "flex", flexWrap: "wrap" }}
-          >
-            <ul className="inside" style={{ width: "50%" }}>
+          <div className="specification-container">
+            <ul className="inside">
               {props.selectedCar.specifications
                 .slice(0, props.selectedCar.specifications.length / 2)
                 .map((specification) => (
                   <li key={specification}>{specification}</li>
                 ))}
             </ul>
-            <ul className="inside" style={{ width: "50%" }}>
+            <ul className="inside">
               {props.selectedCar.specifications
                 .slice(
                   Math.ceil(props.selectedCar.specifications.length / 2),
@@ -97,16 +98,25 @@ export default function CarDetails(props) {
           </div>
         </div>
         <br />
-        <div className="more-image-grid">
+        <div>
           {props.selectedCar.moreImages &&
           props.selectedCar.moreImages.length > 0 ? (
             <div
               className="more-image-grid"
               style={{ display: "flex", flexWrap: "wrap" }}
             >
-              {props.selectedCar.moreImages.map((image, index) => (
-                <img src={image} key={index} />
-              ))}
+              <ImageViewer>
+                <div className="image-viewer-container">
+                  {props.selectedCar.moreImages.map((image, index) => (
+                    <img
+                      src={image}
+                      key={index}
+                      alt="car"
+                      style={{ maxWidth: "800px" }}
+                    />
+                  ))}
+                </div>
+              </ImageViewer>
             </div>
           ) : null}
         </div>

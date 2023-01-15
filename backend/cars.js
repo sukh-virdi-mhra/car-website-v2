@@ -17,6 +17,16 @@ const cars = [
       "Black Leather Interior",
       "Contrast Stitching in Berry White",
     ],
+    moreImages: [
+      "https://gvelondon.com/wp-content/uploads/2022/09/7-2.jpg",
+      "https://gvelondon.com/wp-content/uploads/2022/09/6-2.jpg",
+      "https://gvelondon.com/wp-content/uploads/2022/09/5-2.jpg",
+      "https://gvelondon.com/wp-content/uploads/2022/09/4-2.jpg",
+      "https://gvelondon.com/wp-content/uploads/2022/09/3-2.jpg",
+      "https://gvelondon.com/wp-content/uploads/2022/09/2-2.jpg",
+      "https://gvelondon.com/wp-content/uploads/2022/09/1-2.jpg",
+      "https://gvelondon.com/wp-content/uploads/2022/09/X3A1031.jpg",
+    ],
   },
   {
     id: 81015,
@@ -83,7 +93,7 @@ const cars = [
   },
   {
     id: 65022,
-    name: "Ferrari 821 Superfast",
+    name: "Ferrari 812 Superfast",
     mileage: 1653,
     year: 2018,
     price: 249900,
@@ -415,4 +425,4 @@ const cars = [
   },
 ];
 
-export default cars;
+module.exports = cars;
