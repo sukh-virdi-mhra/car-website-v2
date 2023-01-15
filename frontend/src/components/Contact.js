@@ -8,14 +8,16 @@ const Contact = () => {
     email: "",
     phone: "",
     car: "",
+    message: "",
   });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { firstName, lastName, email, phone, car } = formData;
+    const { firstName, lastName, email, phone, car, message } = formData;
+
     fetch("/send-email", {
       method: "POST",
-      body: JSON.stringify({ firstName, lastName, email, phone, car }),
+      body: JSON.stringify({ firstName, lastName, email, phone, car, message }),
       headers: { "Content-Type": "application/json" },
     })
       .then((res) => res.json())
@@ -98,6 +100,17 @@ const Contact = () => {
             required
             value={formData.car}
             onChange={(e) => setFormData({ ...formData, car: e.target.value })}
+          />
+          <br />
+          <label htmlFor="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            value={formData.message}
+            onChange={(e) =>
+              setFormData({ ...formData, message: e.target.value })
+            }
           />
           <br />
           <br />
