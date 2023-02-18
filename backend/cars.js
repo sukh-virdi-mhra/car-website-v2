@@ -33,7 +33,7 @@ const cars = [
     name: "Rolls Royce Cullinan V12 Black Badge",
     mileage: 2000,
     year: 2022,
-    price: 439900,
+    price: 439950,
     image: "https://gvelondon.com/wp-content/uploads/2022/11/9-19.jpg",
     overview:
       "This VAT Qualifying Rolls Royce Cullinan Black Badge has a bewildering approach with hand-built attention to detail, material quality, refinement and comfort. The Cullinan gets its name from the largest diamond ever discovered, emphasising its pure and precious build. The Rolls Royce Cullinan has wonderfully plush, luxurious and modern interior, sleek black accents and a more powerful engine.This specific Rolls Royce Cullinan Black Badge comes with optional extras such as the Drivers Package, Black Badge Technical Carbon, Front Massage Seats, Rolls Royce Bespoke Audio, Coloured Stitching, Rear Theatre Configuration, Lounge Seats and Automatic Door Close.The heart of this Rolls Royce Cullinan Black Badge is a 6.75 litre V12 twin-turbocharged that pushes 591bhp through all four wheels and an 8-speed automatic gearbox. This ensures the Cullinan sprints to speeds of 155mph and a 0-60 time of only 5.1 Seconds.Walk around video available upon request. Nationwide delivery available. All vehicles undergo a full visual and mechanical health check by GVE Servicing and preparation by GVE detailing. Get in touch with any customisation or servicing needs. Please call to confirm specifications as variations can occur. Excellent bodywork, Interior - Excellent Condition, Tyre condition Excellent, 12 Month warranty available - JBR/Aldermore/Black Horse Partner. Major credit/debit cards accepted.",
