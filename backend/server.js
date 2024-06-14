@@ -44,8 +44,7 @@ Message: ${message}
     from: config.email,
     to: email,
     subject: "Thank you for contacting us",
-    text: `
-    
+    text: `  
 Dear ${firstName} ${lastName}, 
 
 Thank you for your interest in our cars. We have received your inquiry and will get back to you as soon as possible. 
@@ -59,7 +58,7 @@ Car: ${car}
 Message: ${message}
 
 Veloce Virdi
-    `,
+`,
   };
   await new Promise((resolve) => setTimeout(resolve, 10000));
   transporter.sendMail(automatedMailOptions, function (error, info) {
