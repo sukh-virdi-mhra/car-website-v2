@@ -14,10 +14,12 @@ const Header = () => {
       <Link style={{ textDecoration: "none" }} to="/">
         <h1>Veloce Virdi</h1>
       </Link>
-      <div className="header-right">
-        <div>12-150 Main Street</div>
-        <div> London SW15 3WC</div>
-      </div>
+      <Link style={{ textDecoration: "none" }} to="/location">
+        <div className="header-right">
+          <div>12-150 Main Street</div>
+          <div>London SW15 3WC</div>
+        </div>
+      </Link>
     </div>
   );
 };
