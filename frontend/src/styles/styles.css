@@ -383,3 +383,32 @@ form button:hover {
     width: 100%;
   }
 }
+
+/* Location styling */
+
+.location-info {
+  float: left;
+  width: 50%;
+}
+
+.contact-info {
+  float: right;
+  width: 50%;
+}
+
+.location-text {
+  list-style-type: none;
+  padding: 0;
+}
+
+.location-text li {
+  margin-bottom: 10px;
+}
+
+.location-text h3 {
+  margin-bottom: 5px;
+}
+
+.location-text p {
+  margin: 0;
+}
