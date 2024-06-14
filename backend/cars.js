@@ -5,7 +5,7 @@ const cars = [
     mileage: 2720,
     year: 2013,
     price: "",
-    image: "https://gvelondon.com/wp-content/uploads/2022/09/9-4.jpg",
+    image: "https://gvelondon.com/wp-content/uploads/2024/05/9-3-scaled.jpg",
     overview:
       "Here is an opportunity to own one of the greatest achievements in all of automotive history. Introducing our Bugatti Veyron Grand Sport Roadster! Limited to 150 units worldwide, this is one of the fastest production Roadster's in history with a top speed of 407km/h with the roof up and 360km/h with the roof down. Like the 16.4, the Grand Sport produces 1001HP and sprints from zero to 60 mph in just 2.7 seconds. This car demonstrates that it is possible to create a roadster version of a hypercar whilst maintaining the incredible speed and dynamics without compromising on comfort and safety. By removing the roof, the passengers are directly exposed to the 8.0 litre quad turbo W16 which increases the unique and emotional experience of the Veyron and the transparent roof allows drivers to directly experience their surroundings, even when the roof is up. The larger Roof Spoiler allows for a more comfortable and relaxed drive at such speeds by reducing noise in the cabin making for the perfect roof down drive. This stunning UK Supplied Bugatti Veyron Grand Sport Roadster has been finished in Pearl White and has been fitted with Polished Alloy Wheels with Diamond Cut Surfaces complete with black brake calipers. This example includes Carbon Fibre Front Spoiler as well as Black Leather Interior with Berry White Contrast Stitching. This vehicle is UK supplied and has been kept in pristine condition as shown by its full Bugatti Service History. Walk around video available upon request. Nationwide delivery available. All vehicles undergo a full visual and mechanical health check by GVE Servicing and preparation by GVE detailing. Get in touch with any customisation or servicing needs. Please call to confirm specifications as variations can occur. Excellent bodywork, Interior - Excellent Condition, Tyre condition Excellent, 12 Month warranty available - JBR/ Aldermore/ Black Horse Partner. Major credit/ debit cards accepted. Please view on our website.",
     specifications: [
@@ -18,14 +18,13 @@ const cars = [
       "Contrast Stitching in Berry White",
     ],
     moreImages: [
-      "https://gvelondon.com/wp-content/uploads/2022/09/7-2.jpg",
-      "https://gvelondon.com/wp-content/uploads/2022/09/6-2.jpg",
-      "https://gvelondon.com/wp-content/uploads/2022/09/5-2.jpg",
-      "https://gvelondon.com/wp-content/uploads/2022/09/4-2.jpg",
-      "https://gvelondon.com/wp-content/uploads/2022/09/3-2.jpg",
-      "https://gvelondon.com/wp-content/uploads/2022/09/2-2.jpg",
-      "https://gvelondon.com/wp-content/uploads/2022/09/1-2.jpg",
-      "https://gvelondon.com/wp-content/uploads/2022/09/X3A1031.jpg",
+      "https://gvelondon.com/wp-content/uploads/2024/05/DSC05048_0007_DSC05048.ARW_-scaled.jpg",
+      "https://gvelondon.com/wp-content/uploads/2024/05/DSC05048_0006_DSC05047.ARW_-scaled.jpg",
+      "https://gvelondon.com/wp-content/uploads/2024/05/DSC05048_0007_DSC05048.ARW_-scaled.jpg",
+      "https://gvelondon.com/wp-content/uploads/2024/05/DSC05048_0006_DSC05047.ARW_-scaled.jpg",
+      "https://gvelondon.com/wp-content/uploads/2024/05/DSC05048_0005_DSC05046.ARW_-scaled.jpg",
+      "https://gvelondon.com/wp-content/uploads/2024/05/DSC05048_0006_DSC05047.ARW_-scaled.jpg",
+      "https://gvelondon.com/wp-content/uploads/2024/05/DSC05048_0004_DSC05045.ARW_-scaled.jpg",
     ],
   },
   {
@@ -33,7 +32,7 @@ const cars = [
     name: "Rolls Royce Cullinan V12 Black Badge",
     mileage: 2000,
     year: 2022,
-    price: 439950,
+    price: 439900,
     image: "https://gvelondon.com/wp-content/uploads/2022/11/9-19.jpg",
     overview:
       "This VAT Qualifying Rolls Royce Cullinan Black Badge has a bewildering approach with hand-built attention to detail, material quality, refinement and comfort. The Cullinan gets its name from the largest diamond ever discovered, emphasising its pure and precious build. The Rolls Royce Cullinan has wonderfully plush, luxurious and modern interior, sleek black accents and a more powerful engine.This specific Rolls Royce Cullinan Black Badge comes with optional extras such as the Drivers Package, Black Badge Technical Carbon, Front Massage Seats, Rolls Royce Bespoke Audio, Coloured Stitching, Rear Theatre Configuration, Lounge Seats and Automatic Door Close.The heart of this Rolls Royce Cullinan Black Badge is a 6.75 litre V12 twin-turbocharged that pushes 591bhp through all four wheels and an 8-speed automatic gearbox. This ensures the Cullinan sprints to speeds of 155mph and a 0-60 time of only 5.1 Seconds.Walk around video available upon request. Nationwide delivery available. All vehicles undergo a full visual and mechanical health check by GVE Servicing and preparation by GVE detailing. Get in touch with any customisation or servicing needs. Please call to confirm specifications as variations can occur. Excellent bodywork, Interior - Excellent Condition, Tyre condition Excellent, 12 Month warranty available - JBR/Aldermore/Black Horse Partner. Major credit/debit cards accepted.",
