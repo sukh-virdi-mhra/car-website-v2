@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
+import Location from "./components/Location";
 import CarDetails from "./components/CarDetails";
 import { useNavigate } from "react-router-dom";
 
@@ -18,6 +19,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Homepage />} />
+        <Route exact path="/location" element={<Location />} />
         <Route
           path="/cars-for-sale"
           element={
