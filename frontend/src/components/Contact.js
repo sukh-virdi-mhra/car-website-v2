@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/styles.css";
 
 const Contact = () => {
@@ -10,6 +10,23 @@ const Contact = () => {
     car: "",
     message: "",
   });
+
+  const [carOptions, setCarOptions] = useState([]);
+
+  useEffect(() => {
+    fetchCarOptions();
+  }, []);
+
+  const fetchCarOptions = async () => {
+    try {
+      const response = await fetch("/api");
+      const data = await response.json();
+      setCarOptions(data.cars.map((car) => car.name));
+    } catch (error) {
+      console.error("Error fetching car options:", error);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { firstName, lastName, email, phone, car, message } = formData;
@@ -34,6 +51,11 @@ const Contact = () => {
     }
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
   return (
     <div className="homepage">
       <div className="homepage__content">
@@ -53,12 +75,10 @@ const Contact = () => {
               <input
                 type="text"
                 id="first-name"
-                name="first-name"
+                name="firstName"
                 required
                 value={formData.firstName}
-                onChange={(e) =>
-                  setFormData({ ...formData, firstName: e.target.value })
-                }
+                onChange={handleChange}
               />
             </div>
             <div style={{ width: "50%" }}>
@@ -66,12 +86,10 @@ const Contact = () => {
               <input
                 type="text"
                 id="last-name"
-                name="last-name"
+                name="lastName"
                 required
                 value={formData.lastName}
-                onChange={(e) =>
-                  setFormData({ ...formData, lastName: e.target.value })
-                }
+                onChange={handleChange}
               />
             </div>
           </div>
@@ -82,9 +100,7 @@ const Contact = () => {
             name="email"
             required
             value={formData.email}
-            onChange={(e) =>
-              setFormData({ ...formData, email: e.target.value })
-            }
+            onChange={handleChange}
           />
           <br />
           <label htmlFor="phone">Phone</label>
@@ -94,20 +110,24 @@ const Contact = () => {
             name="phone"
             required
             value={formData.phone}
-            onChange={(e) =>
-              setFormData({ ...formData, phone: e.target.value })
-            }
+            onChange={handleChange}
           />
           <br />
           <label htmlFor="car">Car</label>
-          <input
-            type="text"
+          <select
             id="car"
             name="car"
-            required
             value={formData.car}
-            onChange={(e) => setFormData({ ...formData, car: e.target.value })}
-          />
+            onChange={handleChange}
+            required
+          >
+            <option value="">Select a car</option>
+            {carOptions.map((car, index) => (
+              <option key={index} value={car}>
+                {car}
+              </option>
+            ))}
+          </select>
           <br />
           <label htmlFor="message">Message</label>
           <textarea
@@ -115,13 +135,11 @@ const Contact = () => {
             name="message"
             required
             value={formData.message}
-            onChange={(e) =>
-              setFormData({ ...formData, message: e.target.value })
-            }
+            onChange={handleChange}
           />
           <br />
           <br />
-          <button type="submit">Submit</button>
+          <button type="submit">SEND MESSAGE</button>
         </form>
       </div>
     </div>
