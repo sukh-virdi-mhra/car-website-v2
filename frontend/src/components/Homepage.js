@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/styles.css";
+import homepageImages from "../../src/homepageImages";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setCurrentImageIndex(
+          (prevIndex) => (prevIndex + 1) % homepageImages.length
+        );
+        setFade(true);
+      }, 1000);
+    }, 3000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <div className="homepage">
       <div className="homepage__content">
@@ -23,48 +42,18 @@ const Homepage = () => {
           available. Thank you for choosing us as your go-to dealership for all
           your supercar needs.
         </p>
-
-        <div className="image-grid">
-          <img
-            src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Ferrari-Logo.png"
-            alt="Manufacturer 1"
-          />
-          <img
-            src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Porsche-Logo.png"
-            alt="Manufacturer 2"
-          />
-          <img
-            src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Rolls-Royce-Logo.png"
-            alt="Manufacturer 3"
-          />
-          <img
-            src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Bugatti-Logo.png"
-            alt="Manufacturer 4"
-          />
-          <img
-            src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Aston-Martin-Logo.png"
-            alt="Manufacturer 5"
-          />
-          <img
-            src="https://www.supercars.net/blog/wp-content/uploads/2019/12/McLaren-Logo.png"
-            alt="Manufacturer 6"
-          />
-          <img
-            src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Lamborghini-Logo.png"
-            alt="Manufacturer 7"
-          />
-          <img
-            src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Mercedes-Logo.png"
-            alt="Manufacturer 8"
-          />
-          <img
-            src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Pagani-Logo.png"
-            alt="Manufacturer 9"
-          />
-          <img
-            src="https://www.supercars.net/blog/wp-content/uploads/2019/12/Koenigsegg-Logo.png"
-            alt="Manufacturer 10"
-          />
+        <div className="image-container">
+          {homepageImages.map((homepageImages, index) => (
+            <img
+              key={index}
+              src={homepageImages.src}
+              alt={homepageImages.alt}
+              className={index === currentImageIndex ? "active" : ""}
+            />
+          ))}
+          <Link to="/cars-for-sale" className="cars-for-sale-button">
+            VIEW CARS FOR SALE
+          </Link>
         </div>
       </div>
     </div>
